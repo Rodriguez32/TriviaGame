@@ -18,9 +18,11 @@ body {
     background-color: aquamarine;
     font-size: 34 px;
     text-align: center;
-    width: 800px;
+    width: 720px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 
 #content ul {
