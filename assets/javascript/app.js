@@ -13,13 +13,13 @@ var timerId = setInterval(countdown, 1000);
 
 function countdown() {
   if (timeLeft == 0) {
-    clearTimeout(timerId);
-    doSomething();
+    clearInterval(timerId)
   } else {
     elem.innerHTML = timeLeft + ' seconds remaining';
     timeLeft--;
   }
 }
+
 
 function buildQuiz(){
     // this will store the HTML output
@@ -96,7 +96,9 @@ const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 
-var myQuestions = [
+
+
+var myQuestions= [
     {
         question: "Where were the first Ancient Olympics staged?",
         
